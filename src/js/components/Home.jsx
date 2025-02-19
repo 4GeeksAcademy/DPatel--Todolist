@@ -11,7 +11,7 @@ const Home = () => {
         setTasks([...tasks, { title: taskInput, id: Date.now() }]);
         setTaskInput("");
     };
-    
+
     const deleteTask = (taskId) => {
         setTasks(tasks.filter(task => task.id !== taskId));
     };
@@ -45,7 +45,7 @@ const Home = () => {
                                     className="destroy"
                                     onClick={() => deleteTask(task.id)}
                                     >
-                                    ❌
+                                    X
                                     </button>
                                 </div>
                             </li>
